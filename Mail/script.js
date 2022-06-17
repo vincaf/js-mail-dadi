@@ -17,13 +17,17 @@ for (let i = 0; i < mailApproved.length ; i++){
     // Condizione per verificare se la mail inserita corrisponde a quelle approvate
     if ( userMail === element ){
         mailVerified = true;
-        message = "Accesso approvato";
-    } else {
-        message = "Accesso negato - mail non autorizzata";
     }
-
-    // Stampare in console esito del controllo
-    console.log(message);
 }
+
+// Condizione per verificare se la mail inserita corrisponde a quelle approvate
+if ( mailVerified == true ){
+    message = "Accesso approvato";
+} else {
+    message = "Accesso negato - mail non autorizzata";
+}
+
+// Stampare in console esito del controllo
+console.log(message);
 
 
